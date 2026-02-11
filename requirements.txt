@@ -1,0 +1,5 @@
+pandas>=2.1
+pyarrow>=14.0
+jupyterlab>=4.0
+matplotlib>=3.8
+geoip2>=4.8

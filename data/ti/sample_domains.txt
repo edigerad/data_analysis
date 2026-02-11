@@ -1,0 +1,18 @@
+# Sample domain blacklist for testing
+# Format: one domain per line, comments start with #
+# Subdomains automatically match (evil.com matches *.evil.com)
+#
+# In production, populate from feeds like:
+# - URLhaus
+# - PhishTank
+# - OpenPhish
+# - Your SIEM/SOAR findings
+
+# DGA-like domains from sample data (fictional)
+asdkjqwe.xyz    # Matches sample dns.log - simulated DGA
+xvnmqpfl.xyz    # Matches sample dns.log - simulated DGA
+qwplmzxr.xyz    # Matches sample dns.log - simulated DGA
+
+# Example: blocking a parent domain catches all subdomains
+# evil-corp.com           # Blocks *.evil-corp.com too
+# malware-download.net    # From incident INC-2024-002

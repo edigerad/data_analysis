@@ -1,0 +1,17 @@
+# Sample IP blacklist for testing
+# Format: one IP per line, comments start with #
+#
+# In production, populate from feeds like:
+# - abuse.ch SSL Blacklist
+# - Emerging Threats
+# - Spamhaus DROP
+# - Your own incident findings
+
+# Known bad IPs (fictional for testing)
+44.230.90.12    # Matches sample data - simulated C2 server
+44.230.90.13    # Matches sample data - simulated C2 server
+44.230.90.14    # Matches sample data - simulated C2 server
+
+# Example format for real indicators
+# 192.0.2.1       # Example C2 from incident INC-2024-001
+# 198.51.100.50   # Phishing infrastructure

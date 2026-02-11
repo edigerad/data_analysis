@@ -1,0 +1,38 @@
+{
+  "pipeline_version": "1.0.0",
+  "execution_timestamp": "2026-02-11T13:32:26.733661+00:00",
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "input_paths": {
+    "zeek_dir": "/Users/yedigeradolda/workspace/data_analysis/data/zeek_logs/sample",
+    "ti_dir": "/Users/yedigeradolda/workspace/data_analysis/data/ti"
+  },
+  "output_path": "/Users/yedigeradolda/workspace/data_analysis/outputs",
+  "stages_completed": [
+    "LOAD",
+    "NORMALIZE",
+    "ENRICH",
+    "ANALYZE",
+    "EXPORT"
+  ],
+  "unified_schema": {
+    "timestamp": "datetime64[ns, UTC]",
+    "log_type": "string",
+    "uid": "string",
+    "src_ip": "string",
+    "src_port": "Int64",
+    "dst_ip": "string",
+    "dst_port": "Int64",
+    "protocol": "string",
+    "service": "string",
+    "duration_sec": "Float64",
+    "bytes_sent": "Int64",
+    "bytes_recv": "Int64",
+    "packets_sent": "Int64",
+    "packets_recv": "Int64",
+    "conn_state": "string",
+    "dns_query": "string",
+    "dns_qtype": "string",
+    "dns_rcode": "string",
+    "dns_answers": "object"
+  }
+}

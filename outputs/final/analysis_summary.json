@@ -1,0 +1,29 @@
+{
+  "dataset_stats": {
+    "total_connections": 12,
+    "total_dns_queries": 9,
+    "total_events": 21
+  },
+  "protocol_distribution": {
+    "tcp": {
+      "count": 9,
+      "percent": 75.0
+    },
+    "udp": {
+      "count": 3,
+      "percent": 25.0
+    }
+  },
+  "anomaly_indicators": {
+    "failed_connection_rate_pct": 33.3,
+    "nxdomain_rate_pct": 33.3,
+    "ti_matches": 6
+  },
+  "hosts_flagged": 2,
+  "ti_sources": {
+    "ip_files": 1,
+    "domain_files": 1,
+    "total_ips": 3,
+    "total_domains": 3
+  }
+}

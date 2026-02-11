@@ -1,0 +1,3 @@
+src_ip,score,flags,event_count
+192.168.1.200,41,"TI:3, FAIL:1, NX:3",4
+192.168.1.110,36,"TI:3, FAIL:3",3

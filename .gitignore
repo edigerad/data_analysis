@@ -1,0 +1,22 @@
+# Data files (keep structure, ignore large files)
+data/raw_pcaps/*.pcap
+data/raw_pcaps/*.pcapng
+data/zeek_logs/*.log
+data/processed/*.parquet
+data/processed/*.csv
+data/geoip/*.mmdb
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/

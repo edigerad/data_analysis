@@ -1,0 +1,10 @@
+{
+  "intermediate/01_conn_raw.parquet": "e3b197820985c9d137f35c704c08bd59eda622511be4ee8f927dd647ec090954",
+  "intermediate/01_dns_raw.parquet": "7e2c2ddfee76ba286be73d33697457dee7eb55b223fbfceb14a0aec4fcf4d82d",
+  "intermediate/02_conn_normalized.parquet": "72e5a0550939203957547261f0d589c7d4a3e5d5eb07ff9d4088767ad59c40c8",
+  "intermediate/02_dns_normalized.parquet": "3bf76aae3230031ada36a8c5933a3d541c80fd79f137068c8d58a31fe679c2b1",
+  "intermediate/03_unified_enriched.parquet": "6d49dda4a06292207f670fa284de413acb9b5f16ba77666366d68d814752d9c8",
+  "final/enriched_network_events.csv": "0443cf89da0d5c310d20ce4c36f4d82fd5697547c1cc4ecf1c90f9bbc12b5669",
+  "final/investigation_priorities.csv": "4c8fef5d42faa16e1c3df1d1bf125c701b453633bc3ed69a287d91f4faf38668",
+  "final/analysis_summary.json": "51207faffc155bf2079098577eecf305164905f354b9388ff32f76781a4af7af"
+}
