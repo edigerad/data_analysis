@@ -1,0 +1,14 @@
+{
+  "pipeline_version": "2.0.0",
+  "schema": "ECS",
+  "execution_timestamp": "2026-02-18T14:07:50.824211+00:00",
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "input_rows": 21,
+  "output_rows": 21,
+  "mapping_coverage_pct": 100.0,
+  "validation_errors": 0,
+  "checksums": {
+    "ecs_events.csv": "91279f28272690f3172704e26a30578ae04d8618d838a37090962cdf359ead17",
+    "ecs_events.parquet": "458e735bbd3ddd4e36c2ea224cfd730575fe23edc72d6e95b6522f52cc7f83c2"
+  }
+}

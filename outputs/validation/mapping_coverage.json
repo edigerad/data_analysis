@@ -1,0 +1,31 @@
+{
+  "field_mapping": {
+    "src_ip": "source.ip",
+    "dst_ip": "destination.ip",
+    "src_port": "source.port",
+    "dst_port": "destination.port",
+    "protocol": "network.transport",
+    "timestamp": "@timestamp",
+    "uid": "event.id",
+    "service": "network.protocol",
+    "duration_sec": "event.duration",
+    "bytes_sent": "source.bytes",
+    "bytes_recv": "destination.bytes",
+    "packets_sent": "source.packets",
+    "packets_recv": "destination.packets",
+    "conn_state": "zeek.connection.state",
+    "log_type": "event.dataset",
+    "dns_query": "dns.question.name",
+    "dns_qtype": "dns.question.type",
+    "dns_rcode": "dns.response_code",
+    "dns_answers": "dns.answers.name",
+    "ti_match": "threat.indicator.matched"
+  },
+  "coverage_statistics": {
+    "total_source_fields": 20,
+    "mapped_fields": 20,
+    "coverage_pct": 100.0,
+    "unmapped_fields": []
+  },
+  "generated_at": "2026-02-18T14:12:13.332486+00:00"
+}

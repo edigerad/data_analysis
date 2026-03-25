@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "total_rows": 21,
+    "total_source_fields": 20,
+    "mapped_fields": 20,
+    "mapping_coverage_pct": 100.0
+  },
+  "field_analysis": {
+    "unmapped_fields": [],
+    "fields_with_defaults": [
+      "event.kind",
+      "event.category"
+    ]
+  },
+  "validation": {
+    "error_count": 0,
+    "errors": [],
+    "type_coercion_warnings": []
+  },
+  "timestamp_range": {
+    "earliest": "2025-11-03T08:12:34.112000+00:00",
+    "latest": "2025-11-03T08:12:45.100000+00:00"
+  },
+  "generated_at": "2026-02-18T14:07:50.824155+00:00"
+}

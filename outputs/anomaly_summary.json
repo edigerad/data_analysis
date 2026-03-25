@@ -1,0 +1,13 @@
+{
+  "total_buckets": 12,
+  "total_anomalies": 1,
+  "top_anomaly_times": [
+    "2025-11-03T08:12:41+00:00"
+  ],
+  "parameters_used": {
+    "input": "/Users/yedigeradolda/workspace/data_analysis/outputs/ecs/ecs_events.csv",
+    "bucket": "1s",
+    "window": 3,
+    "multiplier": 1.5
+  }
+}

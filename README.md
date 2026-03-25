@@ -83,3 +83,54 @@ pip install -r requirements.txt
 | `http.log` | HTTP requests and responses       |
 | `ssl.log`  | TLS/SSL handshake metadata        |
 | `files.log`| File transfers observed on the wire |
+
+## Schema Standardization (ECS)
+
+This project supports conversion to Elastic Common Schema (ECS) format for SIEM integration.
+
+### Quick Start
+
+```bash
+# Run ECS standardization pipeline
+python scripts/standardize_to_ecs.py
+
+# Output files:
+# - outputs/ecs/ecs_events.csv          (ECS-compliant dataset)
+# - outputs/validation/validation_report.json (Validation results)
+```
+
+### ECS Field Mapping
+
+| Zeek Field | ECS Field |
+|------------|-----------|
+| `id.orig_h` | `source.ip` |
+| `id.resp_h` | `destination.ip` |
+| `id.orig_p` | `source.port` |
+| `id.resp_p` | `destination.port` |
+| `proto` | `network.transport` |
+| `ts` | `@timestamp` |
+
+See `REPORT.md` Appendix B for full ECS vs OCSF comparison.
+
+### Pipeline Architecture
+
+```
+┌─────────┐   ┌───────────┐   ┌─────────┐   ┌─────────────┐   ┌────────┐
+│   RAW   │──▶│ NORMALIZE │──▶│ ENRICH  │──▶│ STANDARDIZE │──▶│ EXPORT │
+│  Zeek   │   │  Unified  │   │   TI    │   │    ECS      │   │  CSV   │
+│  JSON   │   │  Schema   │   │  Match  │   │   Fields    │   │ +JSON  │
+└─────────┘   └───────────┘   └─────────┘   └─────────────┘   └────────┘
+```
+
+### Data Sources
+
+| Source | Description |
+|--------|-------------|
+| [CIC-IDS2017](https://www.unb.ca/cic/datasets/ids-2017.html) | Network intrusion dataset |
+| [Malware-Traffic-Analysis](https://www.malware-traffic-analysis.net/) | Real malware PCAPs |
+| [Security Onion Samples](https://github.com/Security-Onion-Solutions/securityonion/) | NSM samples |
+
+### References
+
+- [ECS Specification](https://www.elastic.co/guide/en/ecs/current/)
+- [OCSF Schema](https://schema.ocsf.io/)

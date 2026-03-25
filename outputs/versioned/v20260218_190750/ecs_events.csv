@@ -1,0 +1,22 @@
+@timestamp,event.kind,event.category,event.dataset,event.id,event.duration,source.ip,source.port,source.bytes,source.packets,destination.ip,destination.port,destination.bytes,destination.packets,network.transport,network.protocol,dns.question.name,dns.question.type,dns.response_code,threat.indicator.matched,zeek.connection.state,dns.answers.name
+2025-11-03T08:12:34.112000Z,event,network,conn,CYfOwn3KhUWXr2GnVe,1.232,192.168.1.100,52134,3420,12,93.184.216.34,443,14820,15,tcp,ssl,,,,False,SF,
+2025-11-03T08:12:34.450000Z,event,network,dns,CbNCRo1MkFJPBcb3ai,,192.168.1.100,52135,,,8.8.8.8,53,,,udp,,www.example.com,A,NOERROR,False,,['93.184.216.34']
+2025-11-03T08:12:34.500000Z,event,network,conn,CbNCRo1MkFJPBcb3ai,0.042,192.168.1.100,52135,38,1,8.8.8.8,53,92,1,udp,dns,,,,False,SF,
+2025-11-03T08:12:35.001000Z,event,network,conn,CxEe2j4FHAhNanWvg,0.521,192.168.1.105,48811,287,8,10.0.0.1,80,4510,9,tcp,http,,,,False,SF,
+2025-11-03T08:12:35.800000Z,event,network,dns,CxEe2j4FHAhNanWvg,,192.168.1.105,48812,,,192.168.1.1,53,,,udp,,internal.corp.local,A,NOERROR,False,,['10.0.0.1']
+2025-11-03T08:12:36.200000Z,event,network,dns,ClEkJM2Vm57wWBGb2k,,192.168.1.100,52136,,,8.8.8.8,53,,,udp,,github.com,A,NOERROR,False,,"['185.199.108.153', '185.199.109.153']"
+2025-11-03T08:12:36.700000Z,event,network,conn,ClEkJM2Vm57wWBGb2k,2.81,192.168.1.100,52140,1520,18,185.199.108.153,443,38400,32,tcp,ssl,,,,False,SF,
+2025-11-03T08:12:37.020000Z,event,network,conn,CnSwq91mHwIV5yRLXf,58.32,10.0.0.50,61234,9800,120,192.168.1.100,22,12400,115,tcp,ssh,,,,False,SF,
+2025-11-03T08:12:38.000000Z,event,network,conn,CQFbv03bKgBIPfKRkc,0.089,192.168.1.110,55001,0,1,44.230.90.12,443,0,0,tcp,ssl,,,,True,S0,
+2025-11-03T08:12:38.300000Z,event,network,conn,CRf1aF4EnTSILx5Rf9,0.091,192.168.1.110,55002,0,1,44.230.90.13,443,0,0,tcp,,,,,True,S0,
+2025-11-03T08:12:38.500000Z,event,network,conn,CIXAb41ORnBY3PKWJ,0.08700000000000001,192.168.1.110,55003,0,1,44.230.90.14,443,0,0,tcp,,,,,True,S0,
+2025-11-03T08:12:39.500000Z,event,network,dns,CwjsYp2W7Hl4bFkVad,,192.168.1.100,52198,,,8.8.8.8,53,,,udp,,www.reddit.com,A,NOERROR,False,,"['151.101.1.140', '151.101.65.140']"
+2025-11-03T08:12:40.000000Z,event,network,conn,CwjsYp2W7Hl4bFkVad,3.4,192.168.1.100,52200,2100,25,151.101.1.140,443,52000,42,tcp,ssl,,,,False,SF,
+2025-11-03T08:12:41.100000Z,event,network,dns,CIoVEl3q0hJQxKLVwc,,192.168.1.105,48900,,,8.8.4.4,53,,,udp,,www.google.com,A,NOERROR,False,,['172.217.14.99']
+2025-11-03T08:12:41.200000Z,event,network,conn,CIoVEl3q0hJQxKLVwc,0.031,192.168.1.105,48900,42,1,8.8.4.4,53,105,1,udp,dns,,,,False,SF,
+2025-11-03T08:12:41.900000Z,event,network,dns,CvbnMk22RSiT9OPXA,,192.168.1.200,49500,,,192.168.1.1,53,,,udp,,asdkjqwe.xyz,A,NXDOMAIN,True,,
+2025-11-03T08:12:42.000000Z,event,network,conn,CvbnMk22RSiT9OPXA,0.005,192.168.1.200,49500,36,1,192.168.1.1,53,,0,udp,dns,,,,False,S0,
+2025-11-03T08:12:42.100000Z,event,network,dns,CTrb8N3nLfUghKXpy,,192.168.1.200,49501,,,192.168.1.1,53,,,udp,,xvnmqpfl.xyz,A,NXDOMAIN,True,,
+2025-11-03T08:12:42.300000Z,event,network,dns,CzOiPq4rS8LwvKJXn,,192.168.1.200,49502,,,192.168.1.1,53,,,udp,,qwplmzxr.xyz,A,NXDOMAIN,True,,
+2025-11-03T08:12:44.800000Z,event,network,dns,CtPZjS2FKTL68wHaY,,192.168.1.105,48940,,,8.8.8.8,53,,,udp,,www.googleapis.com,AAAA,NOERROR,False,,['2607:f8b0:4004:800::200a']
+2025-11-03T08:12:45.100000Z,event,network,conn,CtPZjS2FKTL68wHaY,1.1,192.168.1.105,48950,850,10,172.217.14.99,443,22000,20,tcp,ssl,,,,False,SF,
